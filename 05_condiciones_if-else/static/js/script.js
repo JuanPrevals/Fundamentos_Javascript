@@ -153,4 +153,5 @@ function puedeConducir() {
     } else {
         alert("No puede conducir");
     }
+
 }
