@@ -145,7 +145,7 @@ function descuentoProducto() {
 // Puede Conducir
 
 function puedeConducir() {
-    let edad = parseInt(prompt("Ingrese su edad"));
+    let edad = (prompt("Ingrese su edad"));
     let licencia = prompt("¿Tiene licencia? (si/no)").toLowerCase(); // toLowerCase hace que siempre sea si, independientemente que use tilde no las use use mayusculas o no ETC..
 
     if (edad >= 18 && licencia === "si") {
@@ -154,4 +154,77 @@ function puedeConducir() {
         alert("No puede conducir");
     }
 
+}
+
+
+// Longitud de palabras
+
+
+function encontrarPalabraLarga() {
+    let pal1 = prompt("Ingrese primera palabra");
+    let pal2 = prompt("Ingrese segunda palabra");
+
+    // Validación: si ambas están vacías, muestra advertencia y detiene función
+    if (pal1 === "" && pal2 === "") {
+        alert("Ingrese algún valor para trabajar");
+        return; // Detiene la ejecución
+    }
+
+    // Comparar longitudes
+    if (pal1.length > pal2.length) {
+        alert(`La palabra más larga es "${pal1}" con ${pal1.length} caracteres`);
+    } else if (pal2.length > pal1.length) {
+        alert(`La palabra más larga es "${pal2}" con ${pal2.length} caracteres`);
+    } else {
+        // Si ambas tienen la misma longitud
+        alert(`Ambas palabras tienen la misma longitud: "${pal1}" y "${pal2}" (${pal1.length} caracteres)`);
+    }
+}
+
+
+
+
+function validarCorreo() {
+    let email = prompt("Por favor, ingresar correo:");
+    if (email.includes("@")) {
+        alert(`El correo ${email} ingresado es valido`);
+    } else {
+        alert(`El correo ${email} ingresado es invalido`);
+    }
+}
+
+
+function validarNumero() {
+    let numero = parseInt(prompt("Ingresar número:"));
+    if (numero > 0) {
+        alert(`el ${numero} es positivo`);
+    } else if (numero === 0) {
+        alert(`el ${numero} no tiene signo `)
+    } else {
+        alert(`el ${numero} es negativo`);
+    }
+
+}
+
+
+function saludoSegunHora() {
+    let horaActual = parseInt(prompt("Ingresa la hora actual (formato 24 horas):"));
+    if (horaActual < 12) {
+        alert(`Buenos dias son las ${horaActual} hrs!.`);
+    } else if (horaActual >= 12 && horaActual <= 18) {
+        alert(`Buenos tardes son las ${horaActual} hrs!.`)
+    } else {
+        alert(`Buenos noches son las ${horaActual} hrs!.`);
+    }
+}
+
+
+function verificarLetraE() {
+    let palabra = prompt("Ingresa una palabra:");
+
+    if (palabra.includes("e")) {
+        alert("Contiene la letra 'e'");
+    } else {
+        alert("No contiene la letra 'e'");
+    }
 }

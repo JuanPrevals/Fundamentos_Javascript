@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+main button{
+    background-color: aqua;
+    max-width: 200px;
+}
