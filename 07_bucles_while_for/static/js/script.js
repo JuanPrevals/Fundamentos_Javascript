@@ -21,7 +21,7 @@ function bucleFor() {
         console.log(i);
         resultado += ` ${i}`;
     }
-    alert(resultado); 
+    alert(resultado);
 }
 
 
@@ -64,3 +64,36 @@ function Nauno() {
 
 // 3️⃣ Bucle while: Sumar los n primeros números
 // Usando un bucle for, calcula la suma de los números n primeros números  muestra el resultado en la consola.
+
+function sumarNumeros() {
+    let numero = parseInt(prompt("Ingresa un número:"));
+    let suma = 0;
+    let contador = 1;
+    let resultado = "Suma = 0";
+    while (contador <= numero) {
+        suma += contador;
+        resultado += ` + ${contador} `;
+        contador++
+
+    }
+    alert(`${resultado} = ${suma}`)
+}
+
+
+// 4️⃣ Bucle while: Imprimir múltiplos de 2 del 1 al n (n es el límite de números a encontrar)
+// Escribe un programa que use un bucle for para imprimir los múltiplos de 2 que hay entre 1 y 10 (inclusive).
+
+
+function multiplosDeDos() {
+    let n = parseInt(prompt("Ingresa un número:"));
+    let resultado = "Múltiplos de 2 hasta " + n + ": ";
+
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+            resultado += i + " ";
+        }
+    }
+
+    alert(resultado);
+}
