@@ -1,6 +1,8 @@
 console.log("Conexion JS establecida!")
 
 
+// contador personal, realizado en clase
+
 function counter() {
     let resultado = "El resultado es: ";
     let contador = 10;
@@ -14,6 +16,8 @@ function counter() {
     alert(resultado)
 }
 
+
+// Realizado en clase
 
 function bucleFor() {
     let resultado = '';
