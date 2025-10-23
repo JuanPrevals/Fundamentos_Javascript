@@ -22,9 +22,15 @@ function verificarEtapa() {
     } else if (edad >= 13 && edad < 18) {
         alert("Eres un adolecente")
 
-    } else {
+    } else if (edad > 21) {
         alert("Eres un adulto")
+    } else {
+        alert("Argumento no valido")
     }
+
+
+
+
 
 }
 
@@ -272,18 +278,32 @@ function notaValida() {
 // if (frase.toLowerCase().includes('jesús')) { ... }
 
 
-function palabraClave(){
+function palabraClave() {
 
     let palabra = prompt("Ingresa tu palabra");
 
-    if (palabra.toLowerCase().includes('jesús')) { 
+    if (palabra.toLowerCase().includes('jesús')) {
         alert("Econtraste mi palabra secreta :O")
     }
 
-    else{
+    else {
         alert("Tu palabra no incluye mi frase :( ")
     }
 
 
 }
 
+function counter(){
+    let contador = 1;
+    while(contador <=10 ){
+        console.log(contador);
+        contador++;
+    }
+}
+
+
+function bucleFor(){
+    for (let i= 1; 1 <=5; i++){
+        console.log(i);
+    }
+}
